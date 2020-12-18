@@ -1,0 +1,228 @@
+
+@font-face{
+    font-family:'shentox';
+    src:url("https://lindows.kr/PublicESI/fonts/Shentox/Shentox.ttf") format("truetype");
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face{
+    font-family:'shentox';
+    src:url("https://lindows.kr/PublicESI/fonts/Shentox/Shentox Bold.ttf") format("truetype");
+    font-style:normal;
+    font-weight:bold;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-regular.otf") format("OpenType");
+    font-style:normal;
+    font-weight:normal;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-bold.otf") format("OpenType");
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-italic.otf") format("OpenType");
+    font-style:italic;
+    font-weight:normal;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-bolditalic.otf") format("OpenType");
+    font-style:italic;
+    font-weight:bold;
+    font-stretch:normal;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-condensed.otf") format("OpenType");
+    font-style:normal;
+    font-weight:normal;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-condensedbold.otf") format("OpenType");
+    font-style:normal;
+    font-weight:bold;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-condenseditalic.otf") format("OpenType");
+    font-style:italic;
+    font-weight:normal;
+    font-stretch:condensed;
+}
+@font-face{
+    font-family:'evesansneue';
+    src:url("https://lindows.kr/PublicESI/fonts/evesansneue/evesansneue-condensedbolditalic.otf") format("OpenType");
+    font-style:italic;
+    font-weight:bold;
+    font-stretch:condensed;
+}
+
+body{
+    background-color:rgb(227,229,232);
+    font-family:'evesansneue';
+}
+
+form.Marketeye_inputarea{
+    position:absolute;
+    left:10px;
+    top:100px;
+    text-align:right;
+    height:calc(100% - 150px);
+}
+textarea.Marketeye_inputarea{
+    width:200px;
+    height:50%;
+}
+
+div.Marketeye_tablespace{
+    position:absolute;
+    margin-left:215px;
+    margin-top:20px;
+    width: calc( 95% - 220px);
+    max-width:800px;
+}
+@media ( max-width: 800px ) {
+    form.Marketeye_inputarea{
+        position:absolute;
+        width:50%;
+        left:30px;
+        top:10px;
+        text-align:right;
+        height:150px;
+    }
+    textarea.Marketeye_inputarea{
+        width:100%;
+        height:100%;
+    }
+    
+    div.Marketeye_tablespace{
+        position:absolute;
+        margin-top:220px;
+        margin-left:10px;
+        width: calc( 90%);
+        max-width:800px;
+    }    
+  }
+
+div.Marketeye_topresult{
+    font-size:24px;
+    text-align:right;
+}
+input.Marketeye_inputsubmit{
+    width:80px;
+    height:30px;
+    font-size:18px;
+    color:rgb(46, 51, 56);
+    background-color:rgb(255, 255, 255);
+    border:2px solid rgb(45, 50, 55);
+    border-radius:10px;
+
+    transition:color 0.3s ,background-color 0.3s;
+}
+input.Marketeye_inputsubmit:hover{
+    color:rgb(255, 255, 255);
+    background-color:rgb(114, 137, 218);
+
+}
+div.Marketeye_topresult{
+    left:215px;
+    width:100%;
+    max-width:800px;
+}
+table.Marketeye_list{
+    border:solid 2px rgba(0,0,0,1);
+    width:100%;
+    max-width:800px;
+}
+table.Marketeye_list, table.Marketeye_list td{
+
+    border:1px solid black;
+    border-collapse:collapse;
+    background-color:rgb(250, 250, 250);
+    border:solid 1px rgba(0,0,0,0.2);
+
+}
+
+
+tr.Marketeye_column td{
+    
+    padding-left:5px;
+    padding-right:5px;
+    text-align:center;
+    border:solid 2px black;
+    height:32px;
+}
+tr.Marketeye_column td:hover{
+    
+    background-color:rgb(230,230,230);
+}
+td.Marketeye_column_item, td.Marketeye_column_quantity{
+    padding-top:6px;
+    font-size:18px;
+}
+td.Marketeye_column_price , td.Marketeye_column_pricesum{
+    padding-top:2px;
+    font-size:14px;
+}
+@media ( max-width: 900px ) {
+    td{
+        font-size:13px;
+    }
+    tr.Marketeye_column td{
+        padding-left:2px;
+        padding-right:2px;
+        text-align:center;
+        border:solid 2px black;
+    }
+    td.Marketeye_column_item, td.Marketeye_column_quantity{
+        padding-top:4px;
+        font-size:14px;
+    }
+    td.Marketeye_column_price , td.Marketeye_column_pricesum{
+        padding-top:1px;
+        font-size:11px;
+    }
+
+  }
+td.Marketeye_icon{
+    padding:0px;
+    width:36px;
+
+}
+img.Marketeye_icon{
+    width:36px;
+}
+td.Marketeye_itemname{
+    padding-left:10px;
+    padding-right:10px;
+    min-width:150px;
+}
+ td.Marketeye_price , td.Marketeye_pricesum, td.Marketeye_quantity{
+
+    text-align:right;
+    padding-left:20px;
+    padding-right:5px;
+}
+td.Marketeye_quantity{
+    min-width:50px;
+}
+td.Marketeye_price, td.Marketeye_pricesum{
+    min-width:90px;
+}
+
+
+td.Marketeye_bottomresult{
+    text-align:right;
+    padding:5px;
+}
